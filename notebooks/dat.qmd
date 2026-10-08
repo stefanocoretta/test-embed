@@ -1,0 +1,17 @@
+---
+title: "dat"
+format: html
+---
+
+```{r}
+#| label: setup
+
+library(tidyverse)
+```
+
+```{r}
+#| label: dat
+
+dat <- read_csv(xfun::from_root("data/csv/dat.csv", root = Sys.getenv("QUARTO_PROJECT_DIR")))
+```
+
